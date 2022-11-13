@@ -1,0 +1,41 @@
+{
+  "name": "@tetherly-ui/core",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bigyanpoudel/react-vite-library"
+  },
+  "homepage": "https://github.com/bigyanpoudel/react-vite-library#readme",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/@tetherly-ui/core.es.js",
+      "require": "./dist/@tetherly-ui/core.umd.js"
+    },
+    "./dist/style.css": "./dist/index.css"
+  },
+  "main": "./dist/@tetherly-ui/core.es.js",
+  "module": "./dist/@tetherly-ui/core.umd.js",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4",
+    "vite": "^3.2.3"
+  }
+}
